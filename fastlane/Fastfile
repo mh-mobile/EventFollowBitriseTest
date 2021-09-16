@@ -1,0 +1,6 @@
+lane :certs do
+	match(type: "development", readonly: true)
+	match(type: "adhoc", readonly: true)
+	match(type: "appstore", readonly: true)
+end
+
