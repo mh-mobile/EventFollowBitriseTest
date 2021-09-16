@@ -5,5 +5,5 @@ lane :certs do
 end
 
 lane :dev_certs_force do
-	match(type: "development", readonly: false)
+	match(type: "development", force: true)
 end
