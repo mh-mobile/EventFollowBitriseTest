@@ -4,3 +4,6 @@ lane :certs do
 	match(type: "appstore", readonly: true)
 end
 
+lane :dev_certs_force do
+	match(type: "development", readonly: false)
+end
