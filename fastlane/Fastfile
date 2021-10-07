@@ -7,3 +7,7 @@ end
 lane :dev_certs_force do
 	match(type: "development", force: true)
 end
+
+lane :dev_certs_force_env do
+	match(type: ENV["app_type"], app_identifier: ENV["app_id"], force: true)
+end
